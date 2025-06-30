@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Main music player container -->
+    <div class="player">
+
+        <!-- Displays the current song title -->
+        <h2 id="title">Song Title</h2>
+
+        <!-- Displays the artist name -->
+        <p id="artist">Artist Name</p>
+
+        <!-- The actual audio player (invisible), where the song file is loaded -->
+        <audio src="" id="audio"></audio>
+
+        <!-- Playback control buttons: previous, play/pause, next -->
+        <div class="controls">
+            <button id="prev">⏮️</button>  <!-- Skip to previous song -->
+            <button id="play">▶️</button>  <!-- Play or pause song -->
+            <button id="next">⏭️</button>  <!-- Skip to next song -->
+        </div>
+
+        <!-- Progress bar to show current time and duration of the song -->
+        <div class="progress-container">
+            <span id="current-time">0.00</span>     <!-- Current time of the song -->
+            <input type="range" id="progress" value="0">  <!-- Seek bar -->
+            <span id="duration">0.00</span>         <!-- Total duration of the song -->
+        </div>
+
+        <!-- Volume control slider -->
+        <label>
+            <input type="range" id="volume" min="0" max="1" step="0.1" value="1">
+        </label>
+
+        <!-- Playlist container: songs will be added here using JavaScript -->
+        <div class="playlist" id="playlist"></div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

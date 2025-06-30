@@ -1,0 +1,85 @@
+body {
+  font-family: sans-serif;            /* Uses a clean sans-serif font */
+  background: #1e1e1e;                /* Dark background color */
+  color: white;                       /* White text for contrast */
+  display: flex;                      /* Flexbox layout to center content */
+  justify-content: center;           /* Center horizontally */
+  align-items: center;               /* Center vertically */
+  height: 100vh;                      /* Full viewport height */
+}
+
+/* Main music player container */
+.player {
+  background: #333;                   /* Dark grey background */
+  padding: 30px;                      /* Space inside the box */
+  border-radius: 10px;                /* Rounded corners */
+  width: 300px;                       /* Fixed width */
+  text-align: center;                /* Center all text inside */
+}
+
+/* Styling for all control buttons (play, next, previous) */
+.controls button {
+  font-size: 1.5rem;                  /* Bigger button icons */
+  margin: 10px;                       /* Space around buttons */
+  padding: 10px;                      /* Inside padding for touch-friendly size */
+  border: none;                       /* No default border */
+  background: #555;                   /* Medium grey background */
+  color: white;                       /* White icon/text */
+  border-radius: 50%;                /* Circle buttons */
+  cursor: pointer;                   /* Pointer cursor on hover */
+}
+
+/* Button hover effect */
+.controls button:hover {
+  background: #777;                   /* Lighter grey on hover */
+}
+
+/* Container for progress bar and time */
+.progress-container {
+  display: flex;                      /* Lay out children in a row */
+  align-items: center;               /* Align items vertically centered */
+  gap: 5px;                           /* Space between items */
+  margin: 15px 0;                     /* Space above and below the bar */
+}
+
+/* Progress bar (seek slider) */
+#progress {
+  flex-grow: 1;                       /* Stretch to take available space */
+}
+
+/* Cursor changes to pointer on hover */
+#progress:hover {
+  cursor: pointer;
+}
+
+/* Playlist container styles */
+.playlist {
+  margin-top: 20px;                   /* Space above the playlist */
+  background: #1a1a1a;                /* Darker background */
+  border-radius: 10px;                /* Rounded corners */
+  padding: 10px;                      /* Inner spacing */
+  text-align: left;                  /* Align text to the left */
+  max-height: 150px;                  /* Max height before scroll appears */
+  overflow-y: auto;                   /* Enables vertical scroll if needed */
+}
+
+/* Individual playlist item */
+.playlist-item {
+  padding: 8px;                       /* Inner padding */
+  cursor: pointer;                   /* Pointer cursor on hover */
+  border-bottom: 1px solid #444;      /* Line between songs */
+  color: #ccc;                        /* Light grey text */
+  transition: background 0.2s ease;   /* Smooth background color transition */
+}
+
+/* Playlist item hover effect */
+.playlist-item:hover {
+  background: #2c2c2c;                /* Slightly lighter grey */
+}
+
+/* Active (currently playing) song style */
+.playlist-item.active {
+  background: #00e676;                /* Bright green background */
+  color: black;                       /* Black text for contrast */
+  font-weight: bold;                  /* Bold text */
+}
