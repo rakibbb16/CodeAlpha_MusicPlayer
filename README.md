@@ -1,6 +1,6 @@
 # CodeAlpha Music Player
 
-A simple and polished music player built using **HTML, CSS, and JavaScript** as part of the CodeAlpha Internship (Frontend Task 4).
+A simple and polished music player built using **HTML, CSS, and JavaScript** as part of the CodeAlpha Internship (Frontend Task 3).
 
 ## 🔥 Features
 
